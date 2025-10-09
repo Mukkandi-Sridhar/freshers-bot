@@ -856,7 +856,7 @@ HTML = """
 <body>
     <div class="chat-container">
         <div class="chat-header">
-            <h1><i class="fas fa-robot"></i> Freshers Payment Assistant - 2025-2026</h1>
+            <h1><i class="fas fa-robot"></i> Freshers Assistant-2025</h1>
             <p>CSE-AIML</p>
         </div>
         
