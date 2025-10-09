@@ -7,13 +7,15 @@ from flask import Flask, request, jsonify, render_template_string
 from datetime import datetime
 import os
 from flask_cors import CORS
+from dotenv import load_dotenv
 
-# -----------------------
-# CONFIG
-# -----------------------
-OPENAI_API_KEY = "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"
-PUSHOVER_USER_KEY = "utn9umfu5z6bcicudz7ko763fjfa1f"
-PUSHOVER_APP_TOKEN = "aknce1aq4qbudn83rw4e79g1mst82g"
+# Load environment variables from .env file
+load_dotenv()
+
+# Access the keys
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+PUSHOVER_USER_KEY = os.getenv("PUSHOVER_USER_KEY")
+PUSHOVER_APP_TOKEN = os.getenv("PUSHOVER_APP_TOKEN")
 PAYMENT_AMOUNT = "₹500"
 PHONEPE_NUMBER = "9392886199"
 UPI_ID = "9392886199@ibl"
