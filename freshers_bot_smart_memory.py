@@ -15,8 +15,8 @@ OPENAI_API_KEY = "sk-proj-g_KUERusmblygsP0ks2iAN9gFv4v03P2W9fllgOB_JNEmsLrqTtIUa
 PUSHOVER_USER_KEY = "utn9umfu5z6bcicudz7ko763fjfa1f"
 PUSHOVER_APP_TOKEN = "aknce1aq4qbudn83rw4e79g1mst82g"
 PAYMENT_AMOUNT = "₹500"
-PHONEPE_NUMBER = "9876543210"
-UPI_ID = "fresherspayment@okicici"
+PHONEPE_NUMBER = "9392886199"
+UPI_ID = "9392886199@ibl"
 
 # -----------------------
 # LOGGING
