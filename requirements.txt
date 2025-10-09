@@ -3,5 +3,6 @@ Flask-Cors
 requests
 gunicorn
 python-dotenv
+firebase-admin
 
 
