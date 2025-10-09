@@ -28,75 +28,75 @@ logger = logging.getLogger("FreshersBot")
 # STUDENT DATABASE
 # -----------------------
 STUDENTS_DB = {
-"23091A3301":"Mekala Ammar"
-"23091A3302":"Meerja Anjum"
-"23091A3305":"Andhe Bhargav"
-"23091A3306":"Sompalli Brahmini"
-"23091A3308":"Chitkela Charan"
-"23091A3309":"P Charan Kumar Reddy"
-"23091A3310":"Kaki Charitha Rani"
-"23091A3311":"Kalletti Dedeepya Varshini"
-"23091A3312":"Bethamsetty Deepthi"
-"23091A3313":"Kumarnaki Gari Dharshan"
-"23091A3318":"Bovilla Dileep Kumar Reddy"
-"23091A3319":"Gandla Eranna"
-"23091A3320":"M Giri Prasad"
-"23091A3321":"Kethepalle Guru Sai Sulekha"
-"23091A3323":"Pathuru Guru Vishnu"
-"23091A3319":"Veludrthi Hema"
-"23091A3319":"Chakali Hima Bindhu"
-"23091A3320":"Challa Hima Vamsi Reddy"
-"23091A3321":"Shaik Mohammad Hussain"
-"23091A3322":"Gurumadhu Kakarl"
-"23091A3323":"Andra Keerthana"
-"23091A3324":"Kurimigalla Krishna Mohan"
-"23091A3325":"Kampamalla Madhavi"
-"23091A3326":"Bestha Mahesh Babu"
-"23091A3327":"Mogilipalli Mani Rupesh"
-"23091A3328":"Gopanngari Manjunath"
-"23091A3329":"Gaddam Manvitha"
-"23091A3330":"Muriki Naga Venkata Sai"
-"23091A3331":"Agraharam Naveen Kumar"
-"23091A3332":"Kyabarshi Navya"
-"23091A3333":"Pranathi Reddy K"
-"23091A3334":"Chittiboina Rajeswari"
-"23091A3335":"Boggadi Rama Devi"
-"23091A3337":"Bilavath Ramesh Naik"
-"23091A3338":"Mopuru Rushendra Phani"
-"23091A3339":"Pyaram Rushika"
-"23091A3340":"Chennuri Sai"
-"23091A3341":"Barrenkala Sai Kiranmayi"
-"23091A3343":"Tomala Sai Manaswini"
-"23091A3344":"Gaddam Sai Swaroopa Reddy"
-"23091A3344":"A Mohammed Sameer"
-"23091A3345":"Vakamalla Sanjana"
-"23091A3346":"Syed Shajida Bhanu"
-"23091A3348":"Dudekula Siddini Sharmi"
-"23091A3349":"Mukkandi Sridhar"
-"23091A3350":"Idhumulla Sudheer Kumar"
-"23091A3351":"Maddula Sumanth"
-"23091A3352":"Tagaram Sumhitha"
-"23091A3353":"Vanke Suneetha"
-"23091A3354":"Sivapuram Swapna"
-"23091A3355":"Lakkireddy Swaroopa"
-"23091A3356":"Shaik Tarannum Naaz"
-"23091A3357":"Gajulapalle Thanuja"
-"23091A3358":"Mota Thrilok"
-"23091A3359":"Palla Umesh"
-"23091A3360":"Kotha Varun Kumar"
-"23091A3361":"N Venkata Naga Joshita"
-"23091A3362":"T Venkata Naga Tejaswini"
-"23091A3363":"Gorla Vijaya Lakshmi"
-"23091A3364":"Maneri Vishnu Sai Vamsi"
-"23091A3365":"Dayyam Yashwanth"
-"24095A3301":"Phatan Afroz Ali Khan"
-"24095A3302":"Chinthala Chenna Madhavi"
-"24095A3303":"Jambula Dinesh Reddy"
-"24095A3304":"Labbi Nagarjuna"
-"24095A3305":"Pathapadu Saimanjunath"
-"24095A3306":"Gantala Sumanth"
-"24095A3307":"Suddula Venkata Sivudu"
-"23091A3304":"T Bhanu Prakash"
+    "23091A3301": "Mekala Ammar",
+    "23091A3302": "Meerja Anjum",
+    "23091A3305": "Andhe Bhargav",
+    "23091A3306": "Sompalli Brahmini",
+    "23091A3308": "Chitkela Charan",
+    "23091A3309": "P Charan Kumar Reddy",
+    "23091A3310": "Kaki Charitha Rani",
+    "23091A3311": "Kalletti Dedeepya Varshini",
+    "23091A3312": "Bethamsetty Deepthi",
+    "23091A3313": "Kumarnaki Gari Dharshan",
+    "23091A3318": "Bovilla Dileep Kumar Reddy",
+    "23091A3319": "Gandla Eranna",
+    "23091A3320": "M Giri Prasad",
+    "23091A3321": "Kethepalle Guru Sai Sulekha",
+    "23091A3323": "Pathuru Guru Vishnu",
+    "23091A3319_1": "Veludrthi Hema",          # duplicate keys renamed
+    "23091A3319_2": "Chakali Hima Bindhu",
+    "23091A3320_1": "Challa Hima Vamsi Reddy",
+    "23091A3321_1": "Shaik Mohammad Hussain",
+    "23091A3322": "Gurumadhu Kakarl",
+    "23091A3323_1": "Andra Keerthana",
+    "23091A3324": "Kurimigalla Krishna Mohan",
+    "23091A3325": "Kampamalla Madhavi",
+    "23091A3326": "Bestha Mahesh Babu",
+    "23091A3327": "Mogilipalli Mani Rupesh",
+    "23091A3328": "Gopanngari Manjunath",
+    "23091A3329": "Gaddam Manvitha",
+    "23091A3330": "Muriki Naga Venkata Sai",
+    "23091A3331": "Agraharam Naveen Kumar",
+    "23091A3332": "Kyabarshi Navya",
+    "23091A3333": "Pranathi Reddy K",
+    "23091A3334": "Chittiboina Rajeswari",
+    "23091A3335": "Boggadi Rama Devi",
+    "23091A3337": "Bilavath Ramesh Naik",
+    "23091A3338": "Mopuru Rushendra Phani",
+    "23091A3339": "Pyaram Rushika",
+    "23091A3340": "Chennuri Sai",
+    "23091A3341": "Barrenkala Sai Kiranmayi",
+    "23091A3342": "Tomala Sai Manaswini",
+    "23091A3343": "Gaddam Sai Swaroopa Reddy",
+    "23091A3344": "A Mohammed Sameer",
+    "23091A3345": "Vakamalla Sanjana",
+    "23091A3346": "Syed Shajida Bhanu",
+    "23091A3348": "Dudekula Siddini Sharmi",
+    "23091A3349": "Mukkandi Sridhar",
+    "23091A3350": "Idhumulla Sudheer Kumar",
+    "23091A3351": "Maddula Sumanth",
+    "23091A3352": "Tagaram Sumhitha",
+    "23091A3353": "Vanke Suneetha",
+    "23091A3354": "Sivapuram Swapna",
+    "23091A3355": "Lakkireddy Swaroopa",
+    "23091A3356": "Shaik Tarannum Naaz",
+    "23091A3357": "Gajulapalle Thanuja",
+    "23091A3358": "Mota Thrilok",
+    "23091A3359": "Palla Umesh",
+    "23091A3360": "Kotha Varun Kumar",
+    "23091A3361": "N Venkata Naga Joshita",
+    "23091A3362": "T Venkata Naga Tejaswini",
+    "23091A3363": "Gorla Vijaya Lakshmi",
+    "23091A3364": "Maneri Vishnu Sai Vamsi",
+    "23091A3365": "Dayyam Yashwanth",
+    "24095A3301": "Phatan Afroz Ali Khan",
+    "24095A3302": "Chinthala Chenna Madhavi",
+    "24095A3303": "Jambula Dinesh Reddy",
+    "24095A3304": "Labbi Nagarjuna",
+    "24095A3305": "Pathapadu Saimanjunath",
+    "24095A3306": "Gantala Sumanth",
+    "24095A3307": "Suddula Venkata Sivudu",
+    "23091A3304": "T Bhanu Prakash"
 }
 
 # -----------------------
