@@ -910,7 +910,7 @@ HTML = """
         </div>
         
         <div class="footer">
-            Developed by CSE-AIML 3rd Year
+            Developed by Sridhar | CSE-AIML 3rd Year
         </div>
     </div>
 
