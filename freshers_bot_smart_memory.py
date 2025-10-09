@@ -27,75 +27,74 @@ logger = logging.getLogger("FreshersBot")
 # STUDENT DATABASE
 # -----------------------
 STUDENTS_DB = {
-
-  "23091A3301": "MEKALA AMMAR",
-  "23091A3302": "MEERIJA ANJUM",
-  "23091A3305": "ANDHE BHARGAV",
-  "23091A3306": "SOMPALLI BRAHMINI",
-  "23091A3307": "CHITIKELA CHARAN",
-  "23091A3308": "P CHARAN KUMAR REDDY",
-  "23091A3309": "KAKI CHARITHA RANI",
-  "23091A3310": "KALLETI DEDEEPYA VARSHINI",
-  "23091A3311": "BETHAMSETTY DEEPTHI",
-  "23091A3312": "KUMARANIK GARI DHARSHAN",
-  "23091A3313": "BOVILLA DILEEP KUMAR REDDY",
-  "23091A3314": "GANDLA ERANNA",
-  "23091A3315": "M GIRI PRASAD",
-  "23091A3316": "KETHEPALE GURU SAI SULEKHA",
-  "23091A3317": "PATHURU GURU VISHNU",
-  "23091A3318": "VELDURTHI HEMA",
-  "23091A3319": "CHAKALI HIMA BINDHU",
-  "23091A3320": "CHALLA HIMA VAMSI REDDY",
-  "23091A3321": "SHAIK MOHAMMAD HUSSAIN",
-  "23091A3322": "GURUMADDU KAKARLA",
-  "23091A3323": "ANDRA KEERTHANA",
-  "23091A3324": "KURIMIGALLA KRISHNA MOHAN",
-  "23091A3325": "KAMPAMALLA MADHAVI",
-  "23091A3326": "BESTHA MAHESH BABU",
-  "23091A3327": "MOGILIPALLI MANI RUPESH",
-  "23091A3328": "GOPANNAGARI MANJUNATH",
-  "23091A3329": "GADDAM MANVITHA",
-  "23091A3330": "MURIKI NAGA VENKATA SAI",
-  "23091A3331": "AGRAHARAM NAVEEN KUMAR",
-  "23091A3332": "KYABARSHI NAVYA",
-  "23091A3333": "PRANATHI REDDY K",
-  "23091A3334": "CHITTIBOINA RAJESWARI",
-  "23091A3335": "BOGGADI RAMA DEVI",
-  "23091A3336": "BILAVATH RAMESH NAIK",
-  "23091A3337": "MOPURU RUSHENDRA PHANI",
-  "23091A3338": "PYARAM RUSHIKA",
-  "23091A3339": "CHENNURI SAI",
-  "23091A3341": "BARRENKALA SAI KIRANMAYI",
-  "23091A3342": "TOMALA SAI MANASWINI",
-  "23091A3343": "GADDAM SAI SWAROOPA REDDY",
-  "23091A3344": "A MOHAMMED SAMEER",
-  "23091A3345": "VAKAMALLA SANJANA",
-  "23091A3346": "SYED SHAIJIDA BHANU",
-  "23091A3348": "DUDEKULA SIDDHI SHARMILA",
-  "23091A3349": "MUKKANDI SRIDHAR",
-  "23091A3350": "IDHUMALLA SUDHEER KUMAR",
-  "23091A3351": "MADDULA SUMANTH",
-  "23091A3352": "TAGARAM SUMMITHA",
-  "23091A3353": "VANKE SUNEETHA",
-  "23091A3354": "SIVAPURAM SWAPNA",
-  "23091A3355": "LAKKIREDDY SWAROOPA",
-  "23091A3356": "SHAIK TARANNUM NAAZ",
-  "23091A3357": "GAJULAPALLE THANUJA",
-  "23091A3358": "MOTA THRILOK",
-  "23091A3359": "PALLA UMESH",
-  "23091A3360": "KOTHA VARUN KUMAR",
-  "23091A3361": "N VENKATA NAGA JOSHITA",
-  "23091A3362": "T VENKATA NAGA TEJASWINI",
-  "23091A3363": "GORLA VIJAYA LAKSHMI",
-  "23091A3364": "MANERI VISHNU SAI VAMSI",
-  "23091A3365": "DAYYAM YASHWANTH",
-  "24095A3301": "PHATAN AFROZ ALI KHAN",
-  "24095A3302": "CHINTHALA CHENNA MADHU",
-  "24095A3303": "JAMBULA DINESH REDDY",
-  "24095A3304": "LABBI NAGARJUNA",
-  "24095A3305": "THAPADU SAIMANJUNATH",
-  "24095A3306": "GANTALA SUMANTH",
-  "24095A3307": "SUDDULA VENKATA SIVUDU"
+    "23091A3301": "MEKALA AMMAR",
+    "23091A3302": "MEERIJA ANJUM",
+    "23091A3305": "ANDHE BHARGAV",
+    "23091A3306": "SOMPALLI BRAHMINI",
+    "23091A3307": "CHITIKELA CHARAN",
+    "23091A3308": "P CHARAN KUMAR REDDY",
+    "23091A3309": "KAKI CHARITHA RANI",
+    "23091A3310": "KALLETI DEDEEPYA VARSHINI",
+    "23091A3311": "BETHAMSETTY DEEPTHI",
+    "23091A3312": "KUMARANIK GARI DHARSHAN",
+    "23091A3313": "BOVILLA DILEEP KUMAR REDDY",
+    "23091A3314": "GANDLA ERANNA",
+    "23091A3315": "M GIRI PRASAD",
+    "23091A3316": "KETHEPALE GURU SAI SULEKHA",
+    "23091A3317": "PATHURU GURU VISHNU",
+    "23091A3318": "VELDURTHI HEMA",
+    "23091A3319": "CHAKALI HIMA BINDHU",
+    "23091A3320": "CHALLA HIMA VAMSI REDDY",
+    "23091A3321": "SHAIK MOHAMMAD HUSSAIN",
+    "23091A3322": "GURUMADDU KAKARLA",
+    "23091A3323": "ANDRA KEERTHANA",
+    "23091A3324": "KURIMIGALLA KRISHNA MOHAN",
+    "23091A3325": "KAMPAMALLA MADHAVI",
+    "23091A3326": "BESTHA MAHESH BABU",
+    "23091A3327": "MOGILIPALLI MANI RUPESH",
+    "23091A3328": "GOPANNAGARI MANJUNATH",
+    "23091A3329": "GADDAM MANVITHA",
+    "23091A3330": "MURIKI NAGA VENKATA SAI",
+    "23091A3331": "AGRAHARAM NAVEEN KUMAR",
+    "23091A3332": "KYABARSHI NAVYA",
+    "23091A3333": "PRANATHI REDDY K",
+    "23091A3334": "CHITTIBOINA RAJESWARI",
+    "23091A3335": "BOGGADI RAMA DEVI",
+    "23091A3336": "BILAVATH RAMESH NAIK",
+    "23091A3337": "MOPURU RUSHENDRA PHANI",
+    "23091A3338": "PYARAM RUSHIKA",
+    "23091A3339": "CHENNURI SAI",
+    "23091A3341": "BARRENKALA SAI KIRANMAYI",
+    "23091A3342": "TOMALA SAI MANASWINI",
+    "23091A3343": "GADDAM SAI SWAROOPA REDDY",
+    "23091A3344": "A MOHAMMED SAMEER",
+    "23091A3345": "VAKAMALLA SANJANA",
+    "23091A3346": "SYED SHAIJIDA BHANU",
+    "23091A3348": "DUDEKULA SIDDHI SHARMILA",
+    "23091A3349": "MUKKANDI SRIDHAR",
+    "23091A3350": "IDHUMALLA SUDHEER KUMAR",
+    "23091A3351": "MADDULA SUMANTH",
+    "23091A3352": "TAGARAM SUMMITHA",
+    "23091A3353": "VANKE SUNEETHA",
+    "23091A3354": "SIVAPURAM SWAPNA",
+    "23091A3355": "LAKKIREDDY SWAROOPA",
+    "23091A3356": "SHAIK TARANNUM NAAZ",
+    "23091A3357": "GAJULAPALLE THANUJA",
+    "23091A3358": "MOTA THRILOK",
+    "23091A3359": "PALLA UMESH",
+    "23091A3360": "KOTHA VARUN KUMAR",
+    "23091A3361": "N VENKATA NAGA JOSHITA",
+    "23091A3362": "T VENKATA NAGA TEJASWINI",
+    "23091A3363": "GORLA VIJAYA LAKSHMI",
+    "23091A3364": "MANERI VISHNU SAI VAMSI",
+    "23091A3365": "DAYYAM YASHWANTH",
+    "24095A3301": "PHATAN AFROZ ALI KHAN",
+    "24095A3302": "CHINTHALA CHENNA MADHU",
+    "24095A3303": "JAMBULA DINESH REDDY",
+    "24095A3304": "LABBI NAGARJUNA",
+    "24095A3305": "THAPADU SAIMANJUNATH",
+    "24095A3306": "GANTALA SUMANTH",
+    "24095A3307": "SUDDULA VENKATA SIVUDU"
 }
 
 # -----------------------
@@ -107,7 +106,6 @@ CORS(app)
 # Global conversation memory
 conversation_sessions = {}
 
-# COMPLETE SYSTEM PROMPT - LLM HAS FULL CONTROL
 # COMPLETE SYSTEM PROMPT - LLM HAS FULL CONTROL
 SYSTEM_PROMPT = f"""
 You are FPA (Freshers Payment Assistant) - an AI assistant that helps students complete payments for the Freshers Party.
@@ -478,7 +476,7 @@ def session_info(session_id):
     return jsonify({"error": "Session not found"}), 404
 
 # -----------------------
-# HTML CHAT UI (Optimized)
+# HTML CHAT UI (Enhanced Mobile-Optimized)
 # -----------------------
 HTML = """
 <!DOCTYPE html>
@@ -501,6 +499,7 @@ HTML = """
             --user-msg: #4361ee;
             --bot-msg: #f1f3f5;
             --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --radius: 16px;
         }
 
         * {
@@ -516,56 +515,66 @@ HTML = """
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 10px;
+            padding: 0;
+            margin: 0;
         }
 
         .chat-container {
             width: 100%;
-            max-width: 900px;
-            height: 95vh;
+            max-width: 100%;
+            height: 100vh;
             background: white;
-            border-radius: 20px;
             display: flex;
             flex-direction: column;
-            box-shadow: var(--shadow);
             overflow: hidden;
+            position: relative;
         }
 
         .chat-header {
             background: linear-gradient(to right, var(--primary), var(--secondary));
             color: white;
-            padding: 15px 20px;
+            padding: 16px 20px;
             text-align: center;
             position: relative;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            z-index: 10;
         }
 
         .chat-header h1 {
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             display: flex;
             align-items: center;
             justify-content: center;
             gap: 10px;
+            margin-bottom: 4px;
+        }
+
+        .chat-header p {
+            font-size: 0.85rem;
+            opacity: 0.9;
         }
 
         .chat-messages {
             flex: 1;
-            padding: 15px;
+            padding: 16px;
             overflow-y: auto;
             background-color: #f9fafb;
             display: flex;
             flex-direction: column;
             gap: 12px;
+            scroll-behavior: smooth;
         }
 
         .message {
             max-width: 85%;
-            padding: 12px 15px;
-            border-radius: 18px;
+            padding: 12px 16px;
+            border-radius: var(--radius);
             line-height: 1.4;
             position: relative;
             animation: fadeIn 0.3s ease;
             word-wrap: break-word;
             white-space: pre-line;
+            font-size: 0.95rem;
         }
 
         @keyframes fadeIn {
@@ -577,21 +586,28 @@ HTML = """
             align-self: flex-end;
             background: var(--user-msg);
             color: white;
-            border-bottom-right-radius: 5px;
+            border-bottom-right-radius: 4px;
         }
 
         .bot-message {
             align-self: flex-start;
             background: var(--bot-msg);
             color: var(--dark);
-            border-bottom-left-radius: 5px;
+            border-bottom-left-radius: 4px;
             border: 1px solid var(--light-gray);
+        }
+
+        .message-time {
+            font-size: 0.7rem;
+            opacity: 0.7;
+            margin-top: 6px;
+            text-align: right;
         }
 
         .payment-details {
             background: white;
             border-radius: 12px;
-            padding: 15px;
+            padding: 16px;
             margin: 10px 0;
             border: 1px solid var(--light-gray);
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
@@ -601,40 +617,42 @@ HTML = """
             background: linear-gradient(to right, var(--primary), var(--secondary));
             color: white;
             padding: 10px 15px;
-            margin: -15px -15px 15px -15px;
+            margin: -16px -16px 15px -16px;
             border-radius: 12px 12px 0 0;
             font-weight: bold;
             display: flex;
             align-items: center;
             gap: 8px;
+            font-size: 0.9rem;
         }
 
         .payment-option {
-            margin: 15px 0;
+            margin: 12px 0;
             padding: 12px;
             border-radius: 10px;
             background: var(--light);
             border-left: 4px solid var(--primary);
+            font-size: 0.9rem;
         }
 
         .payment-actions {
             display: flex;
-            gap: 10px;
+            gap: 8px;
             margin-top: 15px;
             flex-wrap: wrap;
         }
 
         .btn {
-            padding: 10px 15px;
+            padding: 10px 12px;
             border: none;
             border-radius: 8px;
             cursor: pointer;
             font-weight: 600;
             display: flex;
             align-items: center;
-            gap: 8px;
+            gap: 6px;
             transition: all 0.3s;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             text-decoration: none;
             flex: 1;
             justify-content: center;
@@ -651,9 +669,12 @@ HTML = """
         }
 
         .chat-input-container {
-            padding: 15px;
+            padding: 16px;
             border-top: 1px solid var(--light-gray);
             background: white;
+            position: sticky;
+            bottom: 0;
+            z-index: 5;
         }
 
         .chat-input-form {
@@ -664,25 +685,27 @@ HTML = """
 
         .chat-input {
             flex: 1;
-            padding: 12px 15px;
+            padding: 14px 16px;
             border: 1px solid var(--light-gray);
-            border-radius: 12px;
+            border-radius: 25px;
             font-size: 1rem;
             outline: none;
             transition: all 0.3s;
+            background: #f8f9fa;
         }
 
         .chat-input:focus {
             border-color: var(--primary);
             box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.1);
+            background: white;
         }
 
         .send-btn {
             background: var(--primary);
             color: white;
             border: none;
-            border-radius: 12px;
-            padding: 0 20px;
+            border-radius: 50%;
+            padding: 0;
             cursor: pointer;
             height: 50px;
             width: 50px;
@@ -691,6 +714,7 @@ HTML = """
             justify-content: center;
             font-size: 1.2rem;
             transition: all 0.3s;
+            box-shadow: 0 2px 8px rgba(67, 97, 238, 0.3);
         }
 
         .send-btn:hover {
@@ -702,10 +726,11 @@ HTML = """
             display: none;
             align-self: flex-start;
             background: var(--bot-msg);
-            padding: 12px 15px;
-            border-radius: 18px;
-            border-bottom-left-radius: 5px;
+            padding: 12px 16px;
+            border-radius: var(--radius);
+            border-bottom-left-radius: 4px;
             margin-bottom: 10px;
+            border: 1px solid var(--light-gray);
         }
 
         .typing-dots {
@@ -730,6 +755,16 @@ HTML = """
             30% { transform: translateY(-5px); opacity: 1; }
         }
 
+        .footer {
+            text-align: center;
+            padding: 12px;
+            font-size: 0.75rem;
+            color: var(--gray);
+            background: var(--light);
+            border-top: 1px solid var(--light-gray);
+        }
+
+        /* Mobile-specific optimizations */
         @media (max-width: 768px) {
             .chat-container {
                 height: 100vh;
@@ -738,6 +773,7 @@ HTML = """
             
             .message {
                 max-width: 90%;
+                font-size: 0.9rem;
             }
             
             .payment-actions {
@@ -747,21 +783,86 @@ HTML = """
             .btn {
                 width: 100%;
             }
+            
+            .chat-header h1 {
+                font-size: 1.2rem;
+            }
+            
+            .chat-header p {
+                font-size: 0.8rem;
+            }
+        }
+
+        /* Small phones */
+        @media (max-width: 480px) {
+            .chat-messages {
+                padding: 12px;
+            }
+            
+            .message {
+                max-width: 95%;
+                padding: 10px 14px;
+            }
+            
+            .chat-input-container {
+                padding: 12px;
+            }
+            
+            .chat-input {
+                padding: 12px 16px;
+            }
+            
+            .send-btn {
+                height: 46px;
+                width: 46px;
+            }
+        }
+
+        /* Dark mode support */
+        @media (prefers-color-scheme: dark) {
+            .bot-message {
+                background: #2d3748;
+                color: #e2e8f0;
+                border-color: #4a5568;
+            }
+            
+            .chat-messages {
+                background-color: #1a202c;
+            }
+            
+            .chat-input {
+                background: #2d3748;
+                color: #e2e8f0;
+                border-color: #4a5568;
+            }
+            
+            .chat-input:focus {
+                background: #2d3748;
+            }
+            
+            .payment-details {
+                background: #2d3748;
+                color: #e2e8f0;
+                border-color: #4a5568;
+            }
+            
+            .payment-option {
+                background: #4a5568;
+                color: #e2e8f0;
+            }
         }
     </style>
 </head>
 <body>
     <div class="chat-container">
         <div class="chat-header">
-            <h1><i class="fas fa-robot"></i> Freshers Payment Assistant</h1>
-            <p>AI-Powered Payment Processing</p>
+            <h1><i class="fas fa-robot"></i> Freshers Payment Assistant - 2025-2026</h1>
+            <p>CSE-AIML</p>
         </div>
         
         <div class="chat-messages" id="chatMessages">
             <div class="message bot-message">
                 🎉 Welcome to Freshers Payment Assistant! 
-                I'll help you complete your payment quickly and easily.
-                Please share your register number to get started!
                 <div class="message-time" id="currentTime"></div>
             </div>
         </div>
@@ -782,6 +883,10 @@ HTML = """
                 </button>
             </div>
         </div>
+        
+        <div class="footer">
+            Developed by Sridhar | CSE-AIML 3rd Year
+        </div>
     </div>
 
     <script>
@@ -794,9 +899,12 @@ HTML = """
         // Update time function
         function updateTime() {
             const now = new Date();
-            document.getElementById('currentTime').textContent = 
-                now.getHours().toString().padStart(2, '0') + ':' + 
-                now.getMinutes().toString().padStart(2, '0');
+            const timeElements = document.querySelectorAll('.message-time');
+            if (timeElements.length > 0) {
+                timeElements[timeElements.length - 1].textContent = 
+                    now.getHours().toString().padStart(2, '0') + ':' + 
+                    now.getMinutes().toString().padStart(2, '0');
+            }
         }
         setInterval(updateTime, 60000);
         updateTime();
@@ -835,6 +943,7 @@ HTML = """
             } catch (error) {
                 typingIndicator.style.display = 'none';
                 addMessage('Sorry, I encountered an error. Please try again.', false);
+                console.error('Error:', error);
             }
         }
 
@@ -859,8 +968,19 @@ HTML = """
             if (e.key === 'Enter') sendMessage();
         });
 
-        // Focus input
-        chatInput.focus();
+        // Auto-focus input and scroll to bottom on load
+        window.addEventListener('load', () => {
+            chatInput.focus();
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        });
+
+        // Handle virtual keyboard on mobile
+        if ('visualViewport' in window) {
+            const visualViewport = window.visualViewport;
+            visualViewport.addEventListener('resize', () => {
+                chatMessages.scrollTop = chatMessages.scrollHeight;
+            });
+        }
     </script>
 </body>
 </html>
