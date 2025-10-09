@@ -866,21 +866,23 @@ HTML = """
                         Payment Details - ₹500
                     </div>
                     
-                    <div class="payment-option">
+                   <div class="payment-option">
                         <h4><i class="fas fa-mobile-alt"></i> PhonePe</h4>
                         <div class="payment-info">
                             <span class="payment-value">""" + PHONEPE_NUMBER + """</span>
                         </div>
                         <div class="payment-actions">
+                            <!-- Copy PhonePe number -->
                             <button class="btn btn-primary" onclick="copyToClipboard('""" + PHONEPE_NUMBER + """')">
                                 <i class="fas fa-copy"></i> Copy Number
                             </button>
-                            <a href="phonepe://pay?pa=""" + PHONEPE_NUMBER + """&pn=Freshers%20Payment" class="btn btn-success">
+                    
+                            <!-- Open PhonePe app directly (mobile only) -->
+                            <a href="upi://pay?pa=""" + PHONEPE_NUMBER + """&pn=Freshers%20Payment&cu=INR" class="btn btn-success">
                                 <i class="fas fa-external-link-alt"></i> Open PhonePe
                             </a>
                         </div>
                     </div>
-                    
                     <div class="payment-option">
                         <h4><i class="fas fa-university"></i> UPI Payment</h4>
                         <div class="payment-info">
