@@ -1,4 +1,4 @@
-# freshers_bot_smart_memory.py
+# freshers_bot_llm_powered.py
 import json
 import uuid
 import logging
@@ -6,8 +6,12 @@ import requests
 from flask import Flask, request, jsonify, render_template_string
 from datetime import datetime
 import os
+import re
 from flask_cors import CORS
 from dotenv import load_dotenv
+import firebase_admin
+from firebase_admin import credentials, firestore
+
 
 # Load environment variables from .env file
 load_dotenv()
@@ -16,9 +20,21 @@ load_dotenv()
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 PUSHOVER_USER_KEY = os.getenv("PUSHOVER_USER_KEY")
 PUSHOVER_APP_TOKEN = os.getenv("PUSHOVER_APP_TOKEN")
-PAYMENT_AMOUNT = "₹500"
+PAYMENT_AMOUNT = "₹550"
 PHONEPE_NUMBER = "9392886199"
 UPI_ID = "9392886199@ibl"
+
+# -----------------------
+# FIREBASE SETUP
+# -----------------------
+try:
+    firebase_admin.get_app()
+except ValueError:
+    cred = credentials.Certificate("freshers-263b4-firebase-adminsdk-fbsvc-632158ab07.json")  # path to your Firebase key file
+    firebase_admin.initialize_app(cred)
+
+db = firestore.client()
+
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 logger = logging.getLogger("FreshersBot")
@@ -94,9 +110,8 @@ STUDENTS_DB = {
     "24095A3304": "LABBI NAGARJUNA",
     "24095A3305": "THAPADU SAIMANJUNATH",
     "24095A3306": "GANTALA SUMANTH",
-    "24095A3307": "SUDDULA VENKATA SIVUDU",
-    "23091A3304" :"BHANU PRAKASH.T
-    }
+    "24095A3307": "SUDDULA VENKATA SIVUDU"
+}
 
 # -----------------------
 # FLASK APP
@@ -431,8 +446,8 @@ def chat():
                     notif_data["reg_no"],
                     notif_data["txn_id"]
                 )
-                logger.info(f"Notification sent for {notif_data['name']}")
-        
+                update_payment_status(notif_data["reg_no"], "Paid")
+                logger.info(f"Notification + Firestore updated for {notif_data['name']}")
         return jsonify(response_data)
     
     except Exception as e:
@@ -475,6 +490,15 @@ def session_info(session_id):
             "has_memory": message_count > 1
         })
     return jsonify({"error": "Session not found"}), 404
+def update_payment_status(register_number, status):
+    """Update student's payment status in Firestore."""
+    try:
+        doc_ref = db.collection("students").document(register_number)
+        doc_ref.set({"status": status}, merge=True)
+        print(f"✅ Firestore updated: {register_number} → {status}")
+    except Exception as e:
+        print(f"❌ Firestore update failed for {register_number}: {e}")
+
 
 # -----------------------
 # HTML CHAT UI (Enhanced Mobile-Optimized)
@@ -857,7 +881,7 @@ HTML = """
 <body>
     <div class="chat-container">
         <div class="chat-header">
-            <h1><i class="fas fa-robot"></i> Freshers Assistant-2025</h1>
+            <h1><i class="fas fa-robot"></i> Freshers Payment Assistant - 2025-2026</h1>
             <p>CSE-AIML</p>
         </div>
         
@@ -886,7 +910,7 @@ HTML = """
         </div>
         
         <div class="footer">
-            Developed by Sridhar | CSE-AIML 3rd Year
+            Developed by CSE-AIML 3rd Year
         </div>
     </div>
 
@@ -996,7 +1020,7 @@ if __name__ == "__main__":
     print("💾 FULL MEMORY: Complete conversation history sent to LLM")
     print("🔔 SMART NOTIFICATIONS: LLM decides when to send push notifications")
     print("📱 MOBILE OPTIMIZED: Works perfectly on all devices")
-    print("👨‍💻 Developed by Sridhar | CSE-AIML 3rd Year")
+    print("👨‍💻 Developed by CSE-AIML 3rd Year")
     
     try:
         app.run(host="0.0.0.0", port=8000, debug=False)
