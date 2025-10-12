@@ -903,7 +903,7 @@ HTML = """
         
         <div class="chat-input-container">
             <div class="chat-input-form">
-                <input type="text" class="chat-input" id="chatInput" placeholder="Type your register number..." autocomplete="off" autofocus>
+                <input type="text" class="chat-input" id="chatInput" placeholder="Type here....." autocomplete="off" autofocus>
                 <button class="send-btn" id="sendButton">
                     <i class="fas fa-paper-plane"></i>
                 </button>
