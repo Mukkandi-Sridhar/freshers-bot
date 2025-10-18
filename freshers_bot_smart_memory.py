@@ -1012,6 +1012,28 @@ HTML = """
 </html>
 """
 
+# --- Health Check Route ---
+@app.route("/health", methods=["GET", "POST"])
+def health():
+    """Health check endpoint to show uptime and optionally reboot."""
+    uptime_seconds = time.time() - START_TIME
+    uptime_str = time.strftime("%Hh %Mm %Ss", time.gmtime(uptime_seconds))
+
+    if request.method == "POST":
+        data = request.get_json(silent=True) or {}
+        if data.get("action") == "reboot":
+            # Optional: Protect with secret key or token if needed
+            os.execv(sys.executable, ['python'] + sys.argv)  # Restarts app
+            return jsonify({"status": "rebooting..."})
+        return jsonify({"error": "Invalid action"}), 400
+
+    return jsonify({
+        "status": "ok",
+        "uptime": uptime_str,
+        "uptime_seconds": round(uptime_seconds, 2),
+        "message": "App is running smoothly 🚀"
+    })
+
 # -----------------------
 # RUN APP
 # -----------------------
